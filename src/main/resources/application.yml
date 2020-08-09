@@ -1,0 +1,7 @@
+app:
+  datasource:
+    jdbc-url: jdbc:postgresql://ec2-54-75-229-28.eu-west-1.compute.amazonaws.com:5432/dc7abgqrko0tla?user=zhnvfhoqfdgric&password=c590fa2c29e913129c468ba90dc647de7e37b4af8a00e9c9f6c0e22a7c60c9b6
+    username: zhnvfhoqfdgric
+    password: c590fa2c29e913129c468ba90dc647de7e37b4af8a00e9c9f6c0e22a7c60c9b6
+    pool-size: 30
+
