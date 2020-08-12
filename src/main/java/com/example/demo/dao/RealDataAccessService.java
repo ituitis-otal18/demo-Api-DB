@@ -49,12 +49,13 @@ public class RealDataAccessService implements PersonDao{
 
     @Override
     public int deletePersonById(UUID id) {
-        return jdbcTemplate.update("DELETE FROM person WHERE id = ?", id);
+        final String sql = "DELETE FROM person WHERE id = ?";
+        return jdbcTemplate.update(sql, id);
     }
 
     @Override
     public int updatePersonById(UUID id, Person person) {
-        //TODO update
-        return 0;
+        final String sql = "UPDATE person SET name = ?, age = ? WHERE id = ?";
+        return jdbcTemplate.update(sql, person.getName(), person.getAge(), id);
     }
 }

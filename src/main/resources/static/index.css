@@ -1,0 +1,58 @@
+body {
+  background-color: #555555;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+h2{color:cornflowerblue;}
+p {font-weight: bolder;}
+
+#people {
+  border-collapse: collapse;
+  width: 75%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+#people tr {background-color: #f2f2f2;}
+#people tr:hover {background-color: #ddd;}
+#people th {
+  background-color: rgb(31, 14, 185);
+  color: white;
+}
+#people td, #people th {
+  border: 1px solid #555555;
+  padding: 12px;
+}
+
+label {
+  color: white;
+}
+form {
+  display: inline-grid;
+  padding: 15px;
+  margin: 3px;
+  border: 2px solid #4CAF50;
+}
+
+input[type=button] {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+input[type=button] {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+input[type=button]:hover {
+  background-color: #4CAF50;
+  color: white;
+}
