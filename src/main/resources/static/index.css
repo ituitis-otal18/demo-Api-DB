@@ -1,6 +1,7 @@
 body {
   background-color: #555555;
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 h2{color:cornflowerblue;}
 p {font-weight: bolder;}
@@ -8,6 +9,7 @@ p {font-weight: bolder;}
 #people {
   border-collapse: collapse;
   width: 75%;
+  margin: 0 auto;
   margin-bottom: 5%;
   text-align: center;
 }
@@ -26,7 +28,7 @@ label {
   color: white;
 }
 form {
-  display: inline-grid;
+  display: inline-block;
   padding: 15px;
   margin: 3px;
   border: 2px solid #4CAF50;

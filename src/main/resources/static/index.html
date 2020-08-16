@@ -7,57 +7,59 @@
   <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-  <script src="app.js"></script>
+<script src="app.js"></script>
 
-  <table id="people">
+<table id="people">
+  <tr>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>AGE</th>
+  </tr>
+</table>
+
+<h2>Operations:</h2>
+
+<form id="add">
+  <table>
     <tr>
-      <th>ID</th>
-      <th>NAME</th>
-      <th>AGE</th>
+      <td><label for="addName">Name:</label></td>
+      <td><input type="text" id="addName"></td>
     </tr>
-  </table>
+    <tr>
+      <td><label for="addAge">Age:</label></td>
+      <td><input type="number" id="addAge" min="0" max="150"></td>
+    </tr>
+  </table><br>
+  <input type="button" onclick="addButton()" value="Create New Person">
+</form><br>
 
-  <form id="add">
-    <table>
-      <tr>
-        <td><label for="addName">Name:</label></td>
-        <td><input type="text" id="addName"></td>
-      </tr>
-      <tr>
-        <td><label for="addAge">Age:</label></td>
-        <td><input type="number" id="addAge" min="0" max="150"></td>
-      </tr>
-    </table><br>
-    <input type="button" onclick="addButton()" value="Create New Person">
-  </form>
+<form id="update">
+  <table>
+    <tr>
+      <td><label for="updateId">ID:</label></td>
+      <td><input type="text" id="updateId"></td>
+    </tr>
+    <tr>
+      <td><label for="updateName">New Name:</label></td>
+      <td><input type="text" id="updateName"></td>
+    </tr>
+    <tr>
+      <td><label for="updateAge">New Age:</label></td>
+      <td><input type="number" id="updateAge" min="0" max="150"></td>
+    </tr>
+  </table><br>
+  <input type="button" onclick="updateButton()" value="Update Person">
+</form><br>
 
-  <form id="update">
-    <table>
-      <tr>
-        <td><label for="updateId">ID:</label></td>
-        <td><input type="text" id="updateId"></td>
-      </tr>
-      <tr>
-        <td><label for="updateName">New Name:</label></td>
-        <td><input type="text" id="updateName"></td>
-      </tr>
-      <tr>
-        <td><label for="updateAge">New Age:</label></td>
-        <td><input type="number" id="updateAge" min="0" max="150"></td>
-      </tr>
-    </table><br>
-    <input type="button" onclick="updateButton()" value="Update Person">
-  </form>
-
-  <form id="delete">
-    <table>
-      <tr>
-        <td><label for="deleteId">ID:</label></td>
-        <td><input type="text" id="deleteId"></td>
-      </tr>
-    </table><br>
-    <input type="button" onclick="deleteButton()" value="Delete Person">
-  </form>
+<form id="delete">
+  <table>
+    <tr>
+      <td><label for="deleteId">ID:</label></td>
+      <td><input type="text" id="deleteId"></td>
+    </tr>
+  </table><br>
+  <input type="button" onclick="deleteButton()" value="Delete Person">
+</form><br>
 
 </body>
 </html>
